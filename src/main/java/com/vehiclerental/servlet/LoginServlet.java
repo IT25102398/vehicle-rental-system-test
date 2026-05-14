@@ -30,6 +30,8 @@ public class LoginServlet extends HttpServlet {
 
             session.setAttribute("user", user);
 
+            session.setAttribute("role", user.getRole());
+
             response.sendRedirect("vehicles.jsp");
 
         } else {
